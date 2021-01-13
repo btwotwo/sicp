@@ -1,7 +1,7 @@
 (define (square x) (* x x))
 (define (sum-of-squares x y) (+ (square x) (square y)))
 
-(define (proc x y z) 
+(define (ex x y z) 
     (if (> x y)
         (if (> z y)
             (sum-of-squares x z)
