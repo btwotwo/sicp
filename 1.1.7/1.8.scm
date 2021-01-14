@@ -11,12 +11,12 @@
     (< (abs (- guess prev-guess)) 0.0001)
 )
 
-(define (average x y) (
-    / (+ x y y ) 3
+(define (average x y z) (
+    / (+ x y z ) 3
 ))
 
 (define (improve guess x) (
-    average (/ x (square guess)) guess 
+    average (/ x (square guess)) guess guess
 ))
 
 (define (cubrt x) 
